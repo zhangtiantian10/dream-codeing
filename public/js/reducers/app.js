@@ -1,12 +1,8 @@
-module.exports = (state = {loginState: ''}, action) => {
+module.exports = (state = {viewFlag: ''}, action) => {
     switch (action.type) {
-        case "LOGIN":
+        case "CHANGE_VIEW":
             return {
-                loginState: action.loginState
-            };
-        case 'CLEAR':
-            return {
-                loginState: ''
+                viewFlag: action.text
             };
         default:
             return state;
