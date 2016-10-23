@@ -81,3 +81,33 @@ span.action  {
   color: #b4a078!important;
 }
 
+.paddingBottom {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.heightA {
+  height: 10px;
+  width: 100%;
+}
+
+input
+{
+  border-top:0px ;
+  border-left:0px ;
+  border-right:0px ;
+  outline:medium;
+  border-bottom: 1px solid #ccc
+}
+
+input {star : expression(
+onmouseover=function(){this.style.borderColor="#060"},
+onmouseout=function(){this.style.borderColor="#c00"})}
+
+.inputPaddingTop {
+  padding-top: 40px;
+}
+
+.colorSearch {
+  width: 40px;
+}
