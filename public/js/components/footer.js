@@ -3,7 +3,7 @@ import React from 'react';
 export default class Footer extends React.Component {
     render() {
         return <div className="container-fluid">
-            <div className="row g-ft">
+            <div className="row">
                 <div className="col-md-offset-1 col-md-3 servicephone line">
                     <h4 className="hd">客服电话</h4>
                     <p className="phone">019-4589612</p>
@@ -20,10 +20,11 @@ export default class Footer extends React.Component {
                 </div>
                 <div className="col-md-3 appDownload">
                     <h4 className="hd">扫码下载</h4>
+                    <img src="../../images/6.jpg" width="100px" alt=""/>
                 </div>
             </div>
             <div className="g-ft2">
-                <div className="row ">
+                <div className="row">
                     <div className="col-md-offset-1 col-md-3 good">
                         <p className="text1">30天免费退款</p>
                     </div>
