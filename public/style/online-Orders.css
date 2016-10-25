@@ -1,0 +1,29 @@
+.msg {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #333;
+}
+.aaa {
+    text-align: right;
+    font-size: 18px;
+    color: #333;
+    line-height: 45px;
+}
+.item{
+    text-align: right;
+}
+.input-group{
+    width: 320px;
+}
+.item-input{
+    margin-bottom: 11px;
+}
+.item-select{
+    margin-top: 11px;
+}
+.item-botton{
+    margin-top: 11px;
+    margin-bottom: 50px;
+}
