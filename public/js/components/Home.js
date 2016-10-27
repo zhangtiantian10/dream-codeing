@@ -39,7 +39,6 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-
                     <a className="left carousel-control" href="#carousel-example-generic" role="button"
                        data-slide="prev">
                         <span className="glyphicon glyphicon-chevron-left"></span>
@@ -52,14 +51,44 @@ export default class Home extends React.Component {
                     </a>
                 </div>
             </div>
-            <div className="col-lg-offset-1 col-lg-10">
-                <img src="../../images/8.jpg" width="100%" alt=""/>
+            <div className="col-lg-offset-2 col-lg-8">
+                <h2 className="center colorList paddingBottomSpan">使用步骤</h2>
+                <img src="../../images/16.jpg" className="paddingBottomSpan" width="100%" alt=""/>
             </div>
-            <div className="col-lg-offset-1 col-lg-10 lunPadding">
-                <img src="../../images/5.jpg" width="50%" alt=""/>
-                <img src="../../images/5.jpg" width="50%" alt=""/>
-                <img src="../../images/9.jpg" width="50%" alt=""/>
-                <img src="../../images/9.jpg" width="50%" alt=""/>
+            <div className="col-lg-offset-1 col-lg-10 lunPadding paddingBottomSpan">
+                <h2 className="center colorList">他们都在使用私人订制</h2>
+                <div className="col-lg-6 paddingBottomSpan">
+                    <div className="col-lg-3">
+                        <img src="../../images/11.jpg" width="100px" alt=""/>
+                    </div>
+                    <div className="col-lg-9 paddingBottomSpan">
+                        <span className="colorList">  我是一名大三的学生，我们课很多，有时候快递来了没办法取，这时候就需要一个人帮我取快递</span>
+                    </div>
+                </div>
+                <div className="col-lg-6 paddingBottomSpan">
+                    <div className="col-lg-3">
+                        <img src="../../images/11.jpg" width="100px" alt=""/>
+                    </div>
+                    <div className="col-lg-9 paddingBottomSpan">
+                        <span className="colorList">  我是一名大三的学生，我们课很多，有时候快递来了没办法取，这时候就需要一个人帮我取快递</span>
+                    </div>
+                </div>
+                <div className="col-lg-6 paddingBottomSpan">
+                    <div className="col-lg-3">
+                        <img src="../../images/13.jpg" width="100px" alt=""/>
+                    </div>
+                    <div className="col-lg-9 paddingBottomSpan">
+                        <span className="colorList">  我是一名大三的学生，我们课很多，有时候快递来了没办法取，这时候就需要一个人帮我取快递</span>
+                    </div>
+                </div>
+                <div className=" col-lg-6 paddingBottomSpan">
+                    <div className="col-lg-3">
+                        <img src="../../images/13.jpg" width="100px" alt=""/>
+                    </div>
+                    <div className="col-lg-9 paddingBottomSpan">
+                        <span className="colorList">  我是一名大三的学生，我们课很多，有时候快递来了没办法取，这时候就需要一个人帮我取快递</span>
+                    </div>
+                </div>
             </div>
             <div className="">
                 <Footer/>

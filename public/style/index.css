@@ -151,3 +151,15 @@ a.aFontColorTwo:focus, a.aFontColorTwo:hover, a.active {
   padding-top: 50px;
 }
 
+.backImage {
+  /*background: url(../images/15.jpg);*/
+}
+
+.paddingBottomSpan {
+  padding-top: 30px;
+}
+
+.colorList {
+  /*color: #b4a078;*/
+  font-weight: bold;
+}

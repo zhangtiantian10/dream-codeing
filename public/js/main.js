@@ -9,6 +9,11 @@ import Footer from './containers/footer.js';
 import Home from './containers/Home';
 import Person from './containers/Person';
 
+import orderList from './containers/orderList.js';
+
+import OnlineOrders from './containers/online-Orders.js';
+
+
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 const store = createStoreWithMiddleware(reducer);
@@ -20,5 +25,7 @@ render(
             <Route path="/nav" component={Nav}/>
             <Route path="/Footer" component={Footer}/>
             <Route path="/person" component={Person}/>
+            <Route path="/orderList" component={orderList}/>
+            <Route path="/OnlineOrders" component={OnlineOrders}/>
         </Router>
     </Provider>, document.getElementById('app'));

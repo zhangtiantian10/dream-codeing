@@ -42,7 +42,7 @@ export default class Nav extends React.Component {
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('run')} onMouseOut={this.mouseMove.bind(this,'display')}>跑腿</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('study')} onMouseOut={this.mouseMove.bind(this,'display')}>学习</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>其他</span></a></li>
-                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>在线下单</span></a></li>
+                    <li><a href="#" className="aa"><span className={this.props.isActive === 'order' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>在线下单</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>常见问题</span></a></li>
                 </ul>
             </div>
