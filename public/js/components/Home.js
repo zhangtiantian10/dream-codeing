@@ -3,6 +3,9 @@ import Nav from '../containers/Nav';
 import Footer from '../containers/footer';
 
 export default class Home extends React.Component {
+    componentDidMount() {
+        this.props.changeNav();
+    }
     render() {
         return <div>
             <Nav/>
@@ -58,7 +61,6 @@ export default class Home extends React.Component {
                 <img src="../../images/9.jpg" width="50%" alt=""/>
                 <img src="../../images/9.jpg" width="50%" alt=""/>
             </div>
-            <div className=""></div>
             <div className="">
                 <Footer/>
             </div>

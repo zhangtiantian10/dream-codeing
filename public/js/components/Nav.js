@@ -9,10 +9,6 @@ export default class Nav extends React.Component {
         this.props.changeView(text);
     }
 
-    scrolls() {
-        alert('a');
-    }
-
     render() {
         return <div>
             <nav className="navbar navbar-inverse" role="navigation">
@@ -22,7 +18,7 @@ export default class Nav extends React.Component {
                 <div className="col-lg-offset-9 aPaddingTop">
                     <a href="#" className="aFontColor">登陆</a>
                     <a href="#" className="aFontColor">|注册</a>
-                    <a href="#" className="aFontColor navpr">个人中心</a>
+                    <a href="/person" className="aFontColor navpr">个人中心</a>
                     <a href="#" className="aFontColor navpr">退出</a>
                 </div>
             </nav>
@@ -41,27 +37,27 @@ export default class Nav extends React.Component {
             <div className="heightA" height="10px" onMouseOver={this.mouseMove.bind(this,'')}></div>
             <div className="container">
                 <ul className="nav nav-justified" role="tablist">
-                    <li><a href="#"><span className="colorA action" onMouseOver={() => this.mouseMove('')}>首页</span></a></li>
-                    <li><a href="#"><span className="colorA" onMouseOver={() => this.mouseMove('')}>全部</span></a></li>
-                    <li><a href="#"><span className="colorA" onMouseOver={() => this.mouseMove('run')} onMouseOut={this.mouseMove.bind(this,'display')}>跑腿</span></a></li>
-                    <li><a href="#"><span className="colorA" onMouseOver={() => this.mouseMove('study')} onMouseOut={this.mouseMove.bind(this,'display')}>学习</span></a></li>
-                    <li><a href="#"><span className="colorA" onMouseOver={() => this.mouseMove('')}>其他</span></a></li>
-                    <li><a href="#"><span className="colorA" onMouseOver={() => this.mouseMove('')}>在线下单</span></a></li>
-                    <li><a href="#"><span className="colorA" onMouseOver={() => this.mouseMove('')}>常见问题</span></a></li>
+                    <li><a href="#" className="aa"><span className={this.props.isActive === 'home' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>首页</span></a></li>
+                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>全部</span></a></li>
+                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('run')} onMouseOut={this.mouseMove.bind(this,'display')}>跑腿</span></a></li>
+                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('study')} onMouseOut={this.mouseMove.bind(this,'display')}>学习</span></a></li>
+                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>其他</span></a></li>
+                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>在线下单</span></a></li>
+                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>常见问题</span></a></li>
                 </ul>
             </div>
             <div style={{display: this.props.viewFlag === 'run'? "block": "none"}} className="container-fluid">
                 <ul className="nav nav-justified" style={{}}>
-                    <li><a>run</a></li>
-                    <li><a>run</a></li>
-                    <li><a>run</a></li>
+                    <li><a className="aa">run</a></li>
+                    <li><a className="aa">run</a></li>
+                    <li><a className="aa">run</a></li>
                 </ul>
             </div>
             <div style={{display: this.props.viewFlag === 'study'? "block": "none"}} className="container-fluid">
                 <ul className="nav nav-justified" style={{width: '1351px', left: '-675.5px'}}>
-                    <li><a href=""><img src="../../images/TopIcon.png" width="50px" alt=""/></a></li>
-                    <li><a href="">study</a></li>
-                    <li><a href="">study</a></li>
+                    <li><a className="aa" href=""><img src="../../images/TopIcon.png" width="50px" alt=""/></a></li>
+                    <li><a className="aa" href="">study</a></li>
+                    <li><a className="aa" href="">study</a></li>
                 </ul>
             </div>
             <div className="heightA" height="10px" onMouseOver={this.mouseMove.bind(this,'')}></div>

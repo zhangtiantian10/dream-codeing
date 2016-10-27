@@ -3,7 +3,8 @@ import Nav from '../components/Nav';
 
 const mapStateToProps = (state) => {
     return {
-        viewFlag: state.app.viewFlag
+        viewFlag: state.app.viewFlag,
+        isActive: state.app.isActive
     };
 };
 

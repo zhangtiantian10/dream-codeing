@@ -64,7 +64,7 @@ a.aFontColor:focus, a.aFontColor:hover {
   font-weight: bold
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a.aa:focus, .nav>li>a.aa:hover {
   background-color: #fff!important;
 }
 
@@ -123,3 +123,31 @@ onmouseout=function(){this.style.borderColor="#c00"})}
 .lunPadding {
   padding-bottom: 70px;
 }
+
+.paddingBottomList {
+  padding-top: 20px;
+}
+
+.aFontColorTwo {
+  color: #000!important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a.aFontColorTwo:focus, a.aFontColorTwo:hover, a.active {
+  color: #b4a078!important;
+}
+
+.nav-pills>li.active>a.aClickColor, .nav-pills>li.active>a.aClickColor:focus, .nav-pills>li.active>a.aClickColor:hover {
+  color: #fff;
+  background-color: #b4a078;
+}
+
+.nav-pills > li > a.aColor {
+  color: #b4a078;
+}
+
+.divPaddingTop {
+  padding-top: 50px;
+}
+

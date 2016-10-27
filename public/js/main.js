@@ -7,6 +7,7 @@ import reducer from "./reducers/index";
 import Nav from './containers/Nav';
 import Footer from './containers/footer.js';
 import Home from './containers/Home';
+import Person from './containers/Person';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -15,9 +16,9 @@ const store = createStoreWithMiddleware(reducer);
 render(
     <Provider store={store}>
         <Router history={browserHistory}>
-            <Route path="/" component={Home}>
-            </Route>
+            <Route path="/" component={Home}/>
             <Route path="/nav" component={Nav}/>
             <Route path="/Footer" component={Footer}/>
+            <Route path="/person" component={Person}/>
         </Router>
     </Provider>, document.getElementById('app'));
