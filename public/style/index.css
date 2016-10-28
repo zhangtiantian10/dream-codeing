@@ -152,7 +152,7 @@ a.aFontColorTwo:focus, a.aFontColorTwo:hover, a.active {
 }
 
 .backImage {
-  /*background: url(../images/15.jpg);*/
+  background: url(../images/下单背景_02.jpg);
 }
 
 .paddingBottomSpan {
@@ -162,4 +162,49 @@ a.aFontColorTwo:focus, a.aFontColorTwo:hover, a.active {
 .colorList {
   /*color: #b4a078;*/
   font-weight: bold;
+}
+
+.backImage1 {
+  background: url(../images/17.jpg);
+  height: 500px;
+}
+
+.loginBack {
+  background-color: #fff;
+  /*padding-top: 50px;*/
+  height: 400px;
+  width: 25%;
+}
+
+a.backColor {
+  background-color: #cccccc;
+}
+
+hr.hrMargeTop {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 3px solid #eee;
+}
+
+.formPaddingTop {
+  padding-top: 40px;
+}
+
+.orderPaddingBottom {
+  margin-bottom: 70px;
+}
+
+.backImage2 {
+  background-image: url("../images/订单列表_03.jpg");
+  margin-left: 30%;
+  height: 650px;
+  width: 490px;
+}
+
+.backImage3 {
+  background-image: url("../images/列表_03.jpg");
+  margin-left: 30%;
+  height: 480px;
+  width: 490px;
 }

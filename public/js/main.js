@@ -8,6 +8,9 @@ import Nav from './containers/Nav';
 import Footer from './containers/footer.js';
 import Home from './containers/Home';
 import Person from './containers/Person';
+import Login from './containers/Login';
+import Log from './containers/Log';
+import Sign from './containers/Sign';
 
 import orderList from './containers/orderList.js';
 
@@ -27,5 +30,9 @@ render(
             <Route path="/person" component={Person}/>
             <Route path="/orderList" component={orderList}/>
             <Route path="/OnlineOrders" component={OnlineOrders}/>
+            <Route path="/login" component={Login}>
+                <IndexRoute component={Log}/>
+                <Route path='/sign' component={Sign}/>
+            </Route>
         </Router>
     </Provider>, document.getElementById('app'));

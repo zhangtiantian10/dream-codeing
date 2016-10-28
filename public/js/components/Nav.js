@@ -16,10 +16,10 @@ export default class Nav extends React.Component {
                     <p className="navbar-text">只有你想不到的，没有我们做不到的</p>
                 </div>
                 <div className="col-lg-offset-9 aPaddingTop">
-                    <a href="#" className="aFontColor">登陆</a>
-                    <a href="#" className="aFontColor">|注册</a>
-                    <a href="/person" className="aFontColor navpr">个人中心</a>
-                    <a href="#" className="aFontColor navpr">退出</a>
+                    <a href="/login" className="aFontColor">登陆</a>
+                    <a href="/sign" className="aFontColor">|注册</a>
+                    {/*<a href="/person" className="aFontColor navpr">个人中心</a>*/}
+                    {/*<a href="#" className="aFontColor navpr">退出</a>*/}
                 </div>
             </nav>
             <div className="container paddingBottom">
@@ -37,12 +37,12 @@ export default class Nav extends React.Component {
             <div className="heightA" height="10px" onMouseOver={this.mouseMove.bind(this,'')}></div>
             <div className="container">
                 <ul className="nav nav-justified" role="tablist">
-                    <li><a href="#" className="aa"><span className={this.props.isActive === 'home' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>首页</span></a></li>
-                    <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>全部</span></a></li>
+                    <li><a href="/" className="aa"><span className={this.props.isActive === 'home' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>首页</span></a></li>
+                    <li><a href="/orderList" className="aa"><span className={this.props.isActive === 'all' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>全部</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('run')} onMouseOut={this.mouseMove.bind(this,'display')}>跑腿</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('study')} onMouseOut={this.mouseMove.bind(this,'display')}>学习</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>其他</span></a></li>
-                    <li><a href="#" className="aa"><span className={this.props.isActive === 'order' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>在线下单</span></a></li>
+                    <li><a href="/OnlineOrders" className="aa"><span className={this.props.isActive === 'order' ?"colorA action" : 'colorA'} onMouseOver={() => this.mouseMove('')}>在线下单</span></a></li>
                     <li><a href="#" className="aa"><span className="colorA" onMouseOver={() => this.mouseMove('')}>常见问题</span></a></li>
                 </ul>
             </div>
